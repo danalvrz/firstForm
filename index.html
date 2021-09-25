@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
+
+    <header>
+        <h1 id="title">Welcome to our form</h1>
+        <p id="description">Thank you for taking the time!</p>
+    </header>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" placeholder="Your name here" required><br><br>
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" placeholder="email@example.com" required><br><br>
+        <label for="number" id="number-label">Number</label><br>
+        <input type="tel" id="number"  placeholder="123-456-7890" maxlength="12" required><br><br><br>
+
+        <label for="dropdown">Which of these is your favorite dish:</label>
+        <select name="dish" id="dropdown">
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="pasta">Pasta</option>
+            <option value="sushi">Sushi</option>
+          </select><br><br>
+
+          <p>Please select your age range:</p>
+         <input type="radio" id="-18" name="age_range" value="-18">
+         <label for="-18">Younger than 18</label><br>
+         <input type="radio" id="18-30" name="age_range" value="18-30">
+         <label for="18-30">18-30</label><br>
+        <input type="radio" id="30+" name="age_range" value="30+">
+        <label for="30+">30+</label><br><br>
+
+        <p>Which means of transport have you used before?</p>
+        <input type="checkbox" id="car" name="car" value="Car">
+        <label for="car"> Car</label><br>
+        <input type="checkbox" id="plane" name="plane" value="Plane">
+        <label for="plane"> Plane</label><br>
+        <input type="checkbox" id="boat" name="boat" value="Boat">
+        <label for="boat"> Boat</label><br><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50">Thank you for your comments!
+        </textarea><br><br>
+        <input type="submit" id="submit">
+        
+
+    </form>
     
 </body>
 </html>
